@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
+/*font-family: 'Shrikhand', cursive;*/
+@font-face {
+    font-family: 'Roboto';
+    src: url('/police/Roboto/Roboto-Black.ttf') format('truetype'),
+    url('/police/Roboto/Roboto-Bold.ttf') format('truetype'),
+    url('/police/Roboto/Roboto-Light.ttf') format('truetype'),
+    url('/police/Roboto/Roboto-Medium.ttf') format('truetype'),
+    url('/police/Roboto/Roboto-Regular.ttf') format('truetype'),
+    url('/police/Roboto/Roboto-Thin.ttf') format('truetype')
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
