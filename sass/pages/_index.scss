@@ -1,0 +1,141 @@
+/*HEADER*/
+.home-page{
+    text-align: center;
+
+    &_logo{
+        box-shadow: 1px 1px 5px rgb(173, 173, 173);
+        z-index: 10;
+        position: relative;
+
+        & img{
+            width: 150px;
+            margin: 20px 0 5px 0;    
+        }
+    }
+
+    &_location{
+        padding: 15px 0;
+        background-color: #eaeaea;
+        color: #353535;
+
+        & i{
+            margin-right: 15px;
+            font-size: 0.9rem;
+        }
+
+        & p{
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+    }
+
+    &_discover{
+        padding: 35px 0 50px 0;
+        background-color: $light-background;
+
+        & h5{
+            font-size: 1.4rem;
+            font-weight: 800;
+            width: 250px;
+            margin: 0 auto;
+        }
+
+        & p{
+            font-weight: 300;
+            padding: 10px 30px 25px 30px;
+        }
+
+        &_button{
+            font-size: 0.85rem;
+        }
+    }
+}
+
+/*NAV*/
+nav{
+    padding: 40px 10px 60px 10px;
+}
+
+nav h3{
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    margin-left: 20px;
+
+}
+
+.li-nav{
+    & > p{
+        width: 25px;
+        background-color: $primary-color;
+        color: white;
+        padding: 5px;
+        margin: -13px;
+        z-index: 10;
+        border-radius: 12px;
+        font-size: 0.8rem;
+    }
+
+    &_card{
+        background-color: $light-background;
+        width: 90%;
+        padding: 22px 0;
+        border-radius: 20px;
+        box-shadow: $cards-shadow;
+
+        & i{
+            margin: 0 30px;
+            color: #7e7e7e;
+        }
+
+        & p{
+            font-weight: 560;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+/*SECTION RESTAURANTS*/
+.restaurants{
+    background-color: $light-background;
+    padding: 50px 0 55px 0;
+
+    & h3{
+        font-size: 1.3rem;
+        font-weight: 800;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+}
+
+.cards-set{
+
+    &_card{
+        border-radius: 15px;
+        width: 90%;
+        box-shadow: $cards-shadow;
+    }
+
+    &_image{
+    height: 150px;   
+
+        & img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+    }
+
+    &_information{
+        padding: 13px 20px 13px 13px;
+
+        & i{
+            font-size: 1.2rem;
+        }
+        & i:hover{
+            color: $primary-color;
+        }
+    }
+}

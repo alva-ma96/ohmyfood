@@ -1,0 +1,56 @@
+/*FLEX*/
+.flex{
+    display: flex;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-column{
+    flex-direction: column;
+}
+.jcc{
+    justify-content: center;
+}
+.jcbtw{
+    justify-content: space-between;
+}
+.aic{
+    align-items: center;
+}
+
+/*GAP*/
+.g-5{
+    gap: 5px;
+}
+.g-10{
+    gap: 10px;
+}
+.g-15{
+    gap: 15px;
+}
+.g-20{
+    gap: 20px;
+}
+.g-25{
+    gap: 25px;
+}
+
+/*POLICE*/
+.fw-100{
+    font-weight: 100;
+}
+.fw-300{
+    font-weight: 300;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-800{
+    font-weight: 800;
+}

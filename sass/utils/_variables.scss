@@ -1,3 +1,13 @@
+/*COLORS*/
 $primary-color : #9356DC;
 $secundary-color : #FF79DA;
 $tertiary-color : #99E2D0;
+$light-background : #f6f6f6;
+$gradient-button : linear-gradient(to top, $primary-color, $secundary-color);
+$hover-gradient-button : linear-gradient(to top, lighten($primary-color, 5%), lighten($secundary-color, 5%));
+
+/*SHADOWS*/
+$cards-shadow : 1px 3px 15px rgba(147, 147, 147, 0.405);
+$hover-cards-shadow : 1px 3px 15px rgba(111, 110, 110, 0.559);
+
+/*FONTS*/

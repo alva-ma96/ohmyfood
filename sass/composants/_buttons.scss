@@ -1,0 +1,15 @@
+.violet--button{
+    box-shadow: $cards-shadow;
+    background-image: $gradient-button;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+
+    &:hover{
+        cursor: pointer;
+        background: $hover-gradient-button;
+        box-shadow: $hover-cards-shadow;
+    }
+}
