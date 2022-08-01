@@ -112,6 +112,8 @@ a {
   box-shadow: 1px 3px 15px rgba(111, 110, 110, 0.559);
 }
 
+/*HEADER MENUS*/
+/*MAIN*/
 /*FOOTER*/
 footer {
   background-color: #353535;
@@ -173,7 +175,7 @@ footer a {
   font-weight: 300;
   padding: 10px 30px 25px 30px;
 }
-.home-page_discover_button {
+.home-page button {
   font-size: 0.85rem;
 }
 
