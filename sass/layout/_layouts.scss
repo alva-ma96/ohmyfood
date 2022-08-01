@@ -1,8 +1,83 @@
 /*HEADER MENUS*/
-
+.menu-header{
+    &_logo i{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        color: #353535;
+        font-size: 1.1rem;
+    }
+    
+    &_logo img{
+        width: 150px;
+        margin: 20px 0 10px 0;
+        text-align: center;
+    }
+    &_img{
+        width: 100%;
+        max-height: 200px;
+        & img{
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+    }  
+}
 
 
 /*MAIN*/
+.menu{
+    background-color: $light-background;
+    border-radius: 40px 40px 0 0;
+    padding: 10px 15px 50px 15px;
+    position: relative;
+
+    &_title{
+        margin: 15px 0 30px 0;
+        & h1{
+            font-size: 1.6rem;
+            margin: 0;
+        }
+    
+        & i{
+            font-size: 1.3rem;
+            padding-right: 20px;
+        }
+    
+    }
+
+    &_box_title{
+        border-bottom: 3px $tertiary-color solid;
+        padding-bottom: 4px;
+        width: 36px;
+        font-size: $h4-size;
+        font-weight: 400;
+    }
+
+    &_box_triple_meal{
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: $cards-shadow;
+        padding: 10px;
+
+        & h5{
+            font-size: $h5-size;
+        }
+
+        &_price{
+            padding-top: 3px;
+        }
+    }
+}
+.light-sub{
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+.bold-price{
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
 
 
 /*FOOTER*/
@@ -13,7 +88,7 @@ footer{
     font-size: 0.9rem;
 }
 
-h1{
+footer h1{
     font-size: 1rem;
 }
 

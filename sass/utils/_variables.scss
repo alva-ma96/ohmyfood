@@ -7,7 +7,9 @@ $gradient-button : linear-gradient(to top, $primary-color, $secundary-color);
 $hover-gradient-button : linear-gradient(to top, lighten($primary-color, 5%), lighten($secundary-color, 5%));
 
 /*SHADOWS*/
-$cards-shadow : 1px 3px 15px rgba(147, 147, 147, 0.405);
+$cards-shadow : 1px 3px 15px rgba(166, 166, 166, 0.544);
 $hover-cards-shadow : 1px 3px 15px rgba(111, 110, 110, 0.559);
 
 /*FONTS*/
+$h4-size : 0.9rem;
+$h5-size : 1rem;
