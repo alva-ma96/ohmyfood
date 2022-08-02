@@ -2,14 +2,19 @@
     box-shadow: $cards-shadow;
     background-image: $gradient-button;
     color: white;
+    font-size: 0.85rem;
     font-weight: 500;
     border: none;
     border-radius: 30px;
-    padding: 15px 20px;
 
     &:hover{
         cursor: pointer;
         background: $hover-gradient-button;
         box-shadow: $hover-cards-shadow;
     }
+}
+
+.order-button button{
+    padding: 15px 50px;
+    margin: 13px 0 25px 0;
 }

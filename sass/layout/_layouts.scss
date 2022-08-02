@@ -33,7 +33,7 @@
     position: relative;
 
     &_title{
-        margin: 15px 0 30px 0;
+        margin: 22px 0 30px 0;
         & h1{
             font-size: 1.6rem;
             margin: 0;
@@ -46,26 +46,34 @@
     
     }
 
-    &_box_title{
-        border-bottom: 3px $tertiary-color solid;
-        padding-bottom: 4px;
-        width: 36px;
-        font-size: $h4-size;
-        font-weight: 400;
-    }
+    &_box{
+        gap: 12px;
 
-    &_box_triple_meal{
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: $cards-shadow;
-        padding: 10px;
-
-        & h5{
-            font-size: $h5-size;
+        &_title{
+            border-bottom: 3px $tertiary-color solid;
+            padding-bottom: 5px;
+            width: 36px;
+            font-size: $h4-size;
+            font-weight: 400;
         }
 
-        &_price{
-            padding-top: 3px;
+        &_triple{
+            gap: 11px;
+
+            &_meal{
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: $cards-shadow;
+                padding: 12px;
+        
+                & h5{
+                    font-size: $h5-size;
+                }
+        
+                &_price{
+                    padding-top: 3px;
+                }
+            }
         }
     }
 }
@@ -76,6 +84,7 @@
 .bold-price{
     font-weight: 600;
     font-size: 0.85rem;
+    padding-right: 10px;
 }
 
 

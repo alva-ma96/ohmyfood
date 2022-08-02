@@ -49,6 +49,10 @@
   gap: 25px;
 }
 
+.g-35 {
+  gap: 33px;
+}
+
 /*POLICE*/
 .fw-100 {
   font-weight: 100;
@@ -104,15 +108,20 @@ a {
   box-shadow: 1px 3px 15px rgba(166, 166, 166, 0.544);
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   color: white;
+  font-size: 0.85rem;
   font-weight: 500;
   border: none;
   border-radius: 30px;
-  padding: 15px 20px;
 }
 .violet--button:hover {
   cursor: pointer;
   background: linear-gradient(to top, #a16be0, #ff93e1);
   box-shadow: 1px 3px 15px rgba(111, 110, 110, 0.559);
+}
+
+.order-button button {
+  padding: 15px 50px;
+  margin: 13px 0 25px 0;
 }
 
 /*HEADER MENUS*/
@@ -147,7 +156,7 @@ a {
   position: relative;
 }
 .menu_title {
-  margin: 15px 0 30px 0;
+  margin: 22px 0 30px 0;
 }
 .menu_title h1 {
   font-size: 1.6rem;
@@ -157,21 +166,27 @@ a {
   font-size: 1.3rem;
   padding-right: 20px;
 }
+.menu_box {
+  gap: 12px;
+}
 .menu_box_title {
   border-bottom: 3px #99E2D0 solid;
-  padding-bottom: 4px;
+  padding-bottom: 5px;
   width: 36px;
   font-size: 0.9rem;
   font-weight: 400;
+}
+.menu_box_triple {
+  gap: 11px;
 }
 .menu_box_triple_meal {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 1px 3px 15px rgba(166, 166, 166, 0.544);
-  padding: 10px;
+  padding: 12px;
 }
 .menu_box_triple_meal h5 {
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 .menu_box_triple_meal_price {
   padding-top: 3px;
@@ -185,6 +200,7 @@ a {
 .bold-price {
   font-weight: 600;
   font-size: 0.85rem;
+  padding-right: 10px;
 }
 
 /*FOOTER*/
@@ -229,10 +245,32 @@ footer a {
 .home-page_location i {
   margin-right: 15px;
   font-size: 0.9rem;
+  display: block;
+  text-align: center;
 }
-.home-page_location p {
+.home-page_location input {
+  width: 130px;
   font-weight: 500;
   font-size: 0.9rem;
+  outline: none;
+  border: none;
+  color: #353535;
+  background-color: #eaeaea;
+}
+.home-page_location input::-moz-placeholder {
+  color: #353535;
+}
+.home-page_location input:-ms-input-placeholder {
+  color: #353535;
+}
+.home-page_location input::placeholder {
+  color: #353535;
+}
+.home-page_location input:-moz-placeholder {
+  color: #353535;
+}
+.home-page_location input::-moz-placeholder {
+  color: #353535;
 }
 .home-page_discover {
   padding: 35px 0 50px 0;
@@ -248,8 +286,8 @@ footer a {
   font-weight: 300;
   padding: 10px 30px 25px 30px;
 }
-.home-page button {
-  font-size: 0.85rem;
+.home-page_discover_button {
+  padding: 15px 20px;
 }
 
 /*NAV*/
@@ -284,6 +322,9 @@ nav h3 {
 .li-nav_card:hover {
   background-color: #f5edff;
 }
+.li-nav_card:hover .hover--color {
+  color: #9356DC;
+}
 .li-nav_card i {
   margin: 0 30px;
   color: #7e7e7e;
@@ -312,6 +353,7 @@ nav h3 {
 }
 .cards-set_image {
   height: 150px;
+  position: relative;
 }
 .cards-set_image img {
   width: 100%;
@@ -328,4 +370,16 @@ nav h3 {
 }
 .cards-set_information i:hover {
   color: #9356DC;
+}
+.cards-set .nouveau p {
+  color: #038968;
+  font-weight: 500;
+  font-size: 0.8rem;
+  background-color: #99E2D0;
+  position: absolute;
+  z-index: 11;
+  padding: 5px 11px;
+  border-radius: 2px;
+  top: 10px;
+  right: 10px;
 }/*# sourceMappingURL=main.css.map */

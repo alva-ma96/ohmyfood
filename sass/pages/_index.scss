@@ -21,11 +21,27 @@
         & i{
             margin-right: 15px;
             font-size: 0.9rem;
+            display: block;
+            text-align: center;
         }
 
-        & p{
+        & input{
+            width: 130px;
             font-weight: 500;
             font-size: 0.9rem;
+            outline: none;
+            border: none;
+            color: #353535;
+            background-color: #eaeaea;
+            &::placeholder{
+                color: #353535;
+            }
+            &:-moz-placeholder{
+                color: #353535;
+            }
+            &::-moz-placeholder{
+                color: #353535;
+            }
         }
     }
 
@@ -44,9 +60,11 @@
             font-weight: 300;
             padding: 10px 30px 25px 30px;
         }
-    }
-    button{
-        font-size: 0.85rem;
+
+        &_button{
+            padding: 15px 20px;
+        }
+    
     }
 }
 
@@ -85,6 +103,9 @@ nav h3{
         &:hover{
             background-color: #f5edff;
         }
+        &:hover .hover--color{
+            color: $primary-color;
+        }
 
         & i{
             margin: 0 30px;
@@ -121,14 +142,15 @@ nav h3{
     }
 
     &_image{
-    height: 150px;   
+    height: 150px;
+    position: relative;
 
         & img{
             width: 100%;
             height: 150px;
             object-fit: cover;
             border-radius: 15px 15px 0 0;
-        }
+        }    
     }
 
     &_information{
@@ -141,4 +163,19 @@ nav h3{
             color: $primary-color;
         }
     }
+
+    & .nouveau p{
+        color: #038968;
+        font-weight: 500;
+        font-size: 0.8rem;
+        background-color: $tertiary-color;
+        position: absolute;
+        z-index: 11;
+        padding: 5px 11px;
+        border-radius: 2px;
+        top: 10px;
+        right: 10px;
+    }
+    
 }
+
