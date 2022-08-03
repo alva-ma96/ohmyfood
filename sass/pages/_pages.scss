@@ -38,12 +38,14 @@
             }
             &:-moz-placeholder{
                 color: #353535;
+                opacity: 1;
             }
             &::-moz-placeholder{
                 color: #353535;
+                opacity: 1;
             }
         }
-    }
+    }    
 
     &_discover{
         padding: 35px 0 50px 0;
@@ -76,12 +78,26 @@ nav{
 nav h3{
     font-size: 1.3rem;
     font-weight: 800;
-    margin-bottom: 30px;
-    margin-left: 20px;
+    margin: 0 0 30px 20px;
+
+    @media screen and (min-width: 992px) {
+        text-align: center;
+        margin-left: 0;
+    }
 
 }
 
+.ul-nav{
+    @media screen and (min-width: 992px) {
+        flex-direction: row;
+        max-width: 85%;
+        margin: 0 auto;
+    }
+}
+
 .li-nav{
+    max-width: 1300px;
+    flex: 1;
     & > p{
         width: 25px;
         background-color: $primary-color;
@@ -129,16 +145,34 @@ nav h3{
         font-weight: 800;
         margin-bottom: 20px;
         margin-left: 20px;
+
+        @media screen and (min-width: 992px) {
+            text-align: center;
+            margin-left: 0;
+        }    
     }
 
 }
 
 .cards-set{
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     &_card{
         border-radius: 15px;
         width: 90%;
         box-shadow: $cards-shadow;
+
+        @media screen and (min-width: 768px) {
+            width: calc(50% - 50px);
+        }
+        @media screen and (min-width: 1800px) {
+            width: calc(25% - 30px);
+        }
+    
     }
 
     &_image{
