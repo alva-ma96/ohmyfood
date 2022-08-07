@@ -1,16 +1,33 @@
 .violet--button{
     box-shadow: $cards-shadow;
-    background-image: $gradient-button;
+    background: $gradient-button;
     color: white;
     font-size: 0.85rem;
     font-weight: 500;
     border: none;
     border-radius: 30px;
+    position: relative;
+    z-index: 1;
 
     &:hover{
         cursor: pointer;
+        &::after{
+            opacity: 1;
+        }
+    }
+
+    &::after{
+        content: "";
         background: $hover-gradient-button;
         box-shadow: $hover-cards-shadow;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        z-index: -1;
+        border-radius: 30px;
     }
 }
 

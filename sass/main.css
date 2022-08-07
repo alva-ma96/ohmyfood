@@ -104,17 +104,33 @@ a {
 
 .violet--button {
   box-shadow: 1px 3px 15px rgba(166, 166, 166, 0.544);
-  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  background: linear-gradient(to top, #9356DC, #FF79DA);
   color: white;
   font-size: 0.85rem;
   font-weight: 500;
   border: none;
   border-radius: 30px;
+  position: relative;
+  z-index: 1;
 }
 .violet--button:hover {
   cursor: pointer;
+}
+.violet--button:hover::after {
+  opacity: 1;
+}
+.violet--button::after {
+  content: "";
   background: linear-gradient(to top, #a16be0, #ff93e1);
   box-shadow: 1px 3px 15px rgba(111, 110, 110, 0.559);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 30px;
 }
 
 .order-button button {
@@ -356,6 +372,7 @@ nav h3 {
   z-index: 10;
   border-radius: 12px;
   font-size: 0.8rem;
+  margin-left: 0.5px;
 }
 .li-nav_card {
   background-color: #f6f6f6;
