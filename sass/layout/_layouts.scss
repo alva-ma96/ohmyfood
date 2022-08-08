@@ -101,6 +101,20 @@
     font-size: 0.85rem;
     padding-right: 10px;
 }
+.fade1{
+    opacity: 0;
+    animation: fadein 2s forwards;
+}
+.fade2{
+    opacity: 0;
+    animation: fadein 2s forwards;
+    animation-delay: 1s;
+}
+.fade3{
+    opacity: 0;
+    animation: fadein 2s forwards;
+    animation-delay: 1.5s;
+}
 
 
 

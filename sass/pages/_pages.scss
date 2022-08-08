@@ -70,6 +70,7 @@
     }
 }
 
+
 /*NAV*/
 nav{
     padding: 40px 10px 60px 10px;
@@ -135,6 +136,7 @@ nav h3{
         }
     }
 }
+
 
 /*SECTION RESTAURANTS*/
 .restaurants{
@@ -214,3 +216,78 @@ nav h3{
     
 }
 
+/*LOADER-WRAPPER*/
+.loader-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 999;
+    animation: disappear 0s 3s both;
+}
+
+@keyframes disappear {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-9999px);
+    }
+}
+
+/*SPINNER LOADER*/
+.loader{
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    position: relative;
+    animation: text-fade 3s ease-in-out infinite;
+
+    &_circle{
+        position: absolute;
+        border: 5px solid transparent;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        animation: rotate var(--duration) var(--timing) infinite;
+    }
+
+    &--violet{
+        border-top-color: $primary-color;
+        --duration: 1.5s;
+        --timing : ease-in-out
+    }
+    &--rose{
+        border-left-color: $secundary-color;
+        --duration: 2s;
+        --timing : ease-in
+    }
+    &--green{
+        border-right-color: $tertiary-color;
+        --duration: 2.5s;
+        --timing : ease-out
+    }
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes text-fade{
+    0%, 100%{
+        color: rgba(0, 0, 0, 1);
+    }
+    25%, 75%{
+        color: rgba(0, 0, 0, .4);
+    }
+    50%{
+        color: rgba(0, 0, 0, 1);
+    }
+}
