@@ -577,19 +577,19 @@ nav h3 {
 }
 
 @-webkit-keyframes rotate {
-  0% {
+  from {
     transform: rotate(0);
   }
-  100% {
+  to {
     transform: rotate(360deg);
   }
 }
 
 @keyframes rotate {
-  0% {
+  from {
     transform: rotate(0);
   }
-  100% {
+  to {
     transform: rotate(360deg);
   }
 }
