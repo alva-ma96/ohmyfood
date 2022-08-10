@@ -4,11 +4,11 @@ $secundary-color : #FF79DA;
 $tertiary-color : #99E2D0;
 $light-background : #f6f6f6;
 $gradient-button : linear-gradient(to top, $primary-color, $secundary-color);
-$hover-gradient-button : linear-gradient(to top, lighten($primary-color, 5%), lighten($secundary-color, 5%));
+$hover-gradient-button : linear-gradient(to top, lighten($primary-color, 3%), lighten($secundary-color, 3%));
 
 /*SHADOWS*/
-$cards-shadow : 1px 3px 15px rgba(166, 166, 166, 0.544);
-$hover-cards-shadow : 1px 3px 15px rgba(111, 110, 110, 0.559);
+$cards-shadow : 0 0.4rem 0.5rem rgba(51, 51, 51, 20%);
+$hover-cards-shadow : 0 0.4rem 0.5rem rgba(51, 51, 51, 25%);
 
 /*FONTS*/
 $h4-size : 0.9rem;

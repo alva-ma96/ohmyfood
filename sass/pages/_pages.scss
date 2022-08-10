@@ -66,6 +66,9 @@
         &_button{
             padding: 15px 20px;
         }
+        & a{
+            color: white;
+        }
     
     }
 }
@@ -120,9 +123,11 @@ nav h3{
 
         &:hover{
             background-color: #f5edff;
+            transition: .4s;
         }
         &:hover .hover--color{
             color: $primary-color;
+            transition: 1s;
         }
 
         & i{
@@ -168,12 +173,17 @@ nav h3{
         border-radius: 15px;
         width: 90%;
         box-shadow: $cards-shadow;
+        transition: .5s;
 
         @media screen and (min-width: 768px) {
             width: calc(50% - 50px);
         }
         @media screen and (min-width: 1800px) {
             width: calc(25% - 30px);
+        }
+
+        &:hover{
+            transform: scale(1.05);
         }
     
     }
@@ -223,7 +233,7 @@ nav h3{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.902);
     z-index: 999;
     animation: disappear 0s 3s both;
 }

@@ -124,7 +124,7 @@ a {
 }
 
 .violet--button {
-  box-shadow: 1px 3px 15px rgba(166, 166, 166, 0.544);
+  box-shadow: 0 0.4rem 0.5rem rgba(51, 51, 51, 0.2);
   background: linear-gradient(to top, #9356DC, #FF79DA);
   color: white;
   font-size: 0.85rem;
@@ -133,17 +133,20 @@ a {
   border-radius: 30px;
   position: relative;
   z-index: 1;
+  transition: 0.5s;
 }
 .violet--button:hover {
   cursor: pointer;
+  transform: translateY(-2px);
+  transition: 0.5s;
 }
 .violet--button:hover::after {
   opacity: 1;
 }
 .violet--button::after {
   content: "";
-  background: linear-gradient(to top, #a16be0, #ff93e1);
-  box-shadow: 1px 3px 15px rgba(111, 110, 110, 0.559);
+  background: linear-gradient(to top, #9b63df, #ff88de);
+  box-shadow: 0 0.4rem 0.5rem rgba(51, 51, 51, 0.25);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -233,7 +236,7 @@ a {
 .menu_box_triple_meal {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 1px 3px 15px rgba(166, 166, 166, 0.544);
+  box-shadow: 0 0.4rem 0.5rem rgba(51, 51, 51, 0.2);
   padding: 12px;
 }
 .menu_box_triple_meal h5 {
@@ -376,6 +379,9 @@ footer a {
 .home-page_discover_button {
   padding: 15px 20px;
 }
+.home-page_discover a {
+  color: white;
+}
 
 /*NAV*/
 nav {
@@ -422,13 +428,15 @@ nav h3 {
   width: 90%;
   padding: 22px 0;
   border-radius: 20px;
-  box-shadow: 1px 3px 15px rgba(166, 166, 166, 0.544);
+  box-shadow: 0 0.4rem 0.5rem rgba(51, 51, 51, 0.2);
 }
 .li-nav_card:hover {
   background-color: #f5edff;
+  transition: 0.4s;
 }
 .li-nav_card:hover .hover--color {
   color: #9356DC;
+  transition: 1s;
 }
 .li-nav_card i {
   margin: 0 30px;
@@ -467,7 +475,8 @@ nav h3 {
 .cards-set_card {
   border-radius: 15px;
   width: 90%;
-  box-shadow: 1px 3px 15px rgba(166, 166, 166, 0.544);
+  box-shadow: 0 0.4rem 0.5rem rgba(51, 51, 51, 0.2);
+  transition: 0.5s;
 }
 @media screen and (min-width: 768px) {
   .cards-set_card {
@@ -478,6 +487,9 @@ nav h3 {
   .cards-set_card {
     width: calc(25% - 30px);
   }
+}
+.cards-set_card:hover {
+  transform: scale(1.05);
 }
 .cards-set_image {
   height: 150px;
@@ -519,7 +531,7 @@ nav h3 {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.902);
   z-index: 999;
   -webkit-animation: disappear 0s 3s both;
           animation: disappear 0s 3s both;
