@@ -78,6 +78,87 @@
   font-weight: 800;
 }
 
+@-webkit-keyframes disappear {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-9999px);
+  }
+}
+
+@keyframes disappear {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-9999px);
+  }
+}
+@-webkit-keyframes overflow {
+  to {
+    overflow: inherit;
+  }
+}
+@keyframes overflow {
+  to {
+    overflow: inherit;
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes heart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes heart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes text-fade {
+  0%, 100% {
+    color: rgb(0, 0, 0);
+  }
+  25%, 75% {
+    color: rgba(0, 0, 0, 0.4);
+  }
+  50% {
+    color: rgb(0, 0, 0);
+  }
+}
+@keyframes text-fade {
+  0%, 100% {
+    color: rgb(0, 0, 0);
+  }
+  25%, 75% {
+    color: rgba(0, 0, 0, 0.4);
+  }
+  50% {
+    color: rgb(0, 0, 0);
+  }
+}
 @-webkit-keyframes fadein {
   from {
     opacity: 0;
@@ -88,7 +169,6 @@
     transform: translateY(0);
   }
 }
-
 @keyframes fadein {
   from {
     opacity: 0;
@@ -112,6 +192,9 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   position: relative;
+  overflow: hidden;
+  -webkit-animation: overflow 0s 3s forwards;
+          animation: overflow 0s 3s forwards;
 }
 
 h1 {
@@ -160,6 +243,33 @@ a {
 .order-button button {
   padding: 15px 50px;
   margin: 45px 0 25px 0;
+}
+
+.cards-set_hearts {
+  position: relative;
+}
+.cards-set_hearts--empty {
+  opacity: 1;
+}
+.cards-set_hearts--plain {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background: linear-gradient(to top, #9356dc, #b35cdc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cards-set_hearts--plain:hover {
+  -webkit-animation: heart 0.5s forwards;
+          animation: heart 0.5s forwards;
+  cursor: pointer;
+}
+.cards-set_hearts--plain:hover .cards-set_hearts--empty {
+  opacity: 0;
 }
 
 /*HEADER MENUS*/
@@ -267,16 +377,16 @@ a {
   opacity: 0;
   -webkit-animation: fadein 2s forwards;
           animation: fadein 2s forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .fade3 {
   opacity: 0;
   -webkit-animation: fadein 2s forwards;
           animation: fadein 2s forwards;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 /*FOOTER*/
@@ -480,12 +590,12 @@ nav h3 {
 }
 @media screen and (min-width: 768px) {
   .cards-set_card {
-    width: calc(50% - 50px);
+    width: calc(50% - 70px);
   }
 }
 @media screen and (min-width: 1800px) {
   .cards-set_card {
-    width: calc(25% - 30px);
+    width: calc(25% - 70px);
   }
 }
 .cards-set_card:hover {
@@ -508,9 +618,6 @@ nav h3 {
 .cards-set_information i {
   font-size: 1.2rem;
 }
-.cards-set_information i:hover {
-  color: #9356DC;
-}
 .cards-set .nouveau p {
   color: #038968;
   font-weight: 500;
@@ -526,34 +633,19 @@ nav h3 {
 
 /*LOADER-WRAPPER*/
 .loader-wrapper {
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(255, 255, 255, 0.902);
   z-index: 999;
   -webkit-animation: disappear 0s 3s both;
           animation: disappear 0s 3s both;
 }
 
-@-webkit-keyframes disappear {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-9999px);
-  }
-}
-
-@keyframes disappear {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-9999px);
-  }
-}
 /*SPINNER LOADER*/
 .loader {
   width: 200px;
@@ -586,44 +678,4 @@ nav h3 {
   border-right-color: #99E2D0;
   --duration: 2.5s;
   --timing: ease-out ;
-}
-
-@-webkit-keyframes rotate {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes text-fade {
-  0%, 100% {
-    color: rgb(0, 0, 0);
-  }
-  25%, 75% {
-    color: rgba(0, 0, 0, 0.4);
-  }
-  50% {
-    color: rgb(0, 0, 0);
-  }
-}
-@keyframes text-fade {
-  0%, 100% {
-    color: rgb(0, 0, 0);
-  }
-  25%, 75% {
-    color: rgba(0, 0, 0, 0.4);
-  }
-  50% {
-    color: rgb(0, 0, 0);
-  }
 }/*# sourceMappingURL=main.css.map */
