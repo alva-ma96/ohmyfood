@@ -5,13 +5,15 @@
         background: linear-gradient(to top, #9356dc, #b35cdc, #ff79da);
         background-clip: text;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;    
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
 
         & + .cards-set_hearts--plain{
             animation: heart .5s forwards;
-            cursor: pointer;
         }
+    
     }
+
     
     &--plain{
         position: absolute;
@@ -21,9 +23,14 @@
         right: 0;
         opacity: 0;
         z-index: -1;
+        cursor: pointer;
         background: linear-gradient(to top, #9356dc, #b35cdc, #ff79da);
         background-clip:text;
         -webkit-background-clip:text;
         -webkit-text-fill-color: transparent;
+
+        &:hover{
+            animation: heart .5s forwards;
+        }
     }
 }

@@ -53,3 +53,21 @@
         transform: translateY(0);
     }
 }
+
+@keyframes checked {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100px;
+    }
+}
+
+@keyframes checked-rotate{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
