@@ -78,6 +78,7 @@
                 background-color: #fff;
                 border-radius: 10px;
                 box-shadow: $cards-shadow;
+                overflow: hidden;
 
                 &_title{
                     white-space: nowrap;

@@ -185,7 +185,7 @@
 }
 @-webkit-keyframes checked {
   from {
-    width: 0;
+    width: 0px;
   }
   to {
     width: 100px;
@@ -193,7 +193,7 @@
 }
 @keyframes checked {
   from {
-    width: 0;
+    width: 0px;
   }
   to {
     width: 100px;
@@ -389,6 +389,7 @@ a {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0.4rem 0.5rem rgba(51, 51, 51, 0.2);
+  overflow: hidden;
 }
 .menu_box_triple_meal_title {
   white-space: nowrap;
