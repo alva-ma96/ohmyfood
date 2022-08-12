@@ -248,8 +248,16 @@ a {
 .cards-set_hearts {
   position: relative;
 }
-.cards-set_hearts--empty {
-  opacity: 1;
+.cards-set_hearts--empty:hover {
+  background: linear-gradient(to top, #9356dc, #b35cdc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cards-set_hearts--empty:hover + .cards-set_hearts--plain {
+  -webkit-animation: heart 0.5s forwards;
+          animation: heart 0.5s forwards;
+  cursor: pointer;
 }
 .cards-set_hearts--plain {
   position: absolute;
@@ -258,18 +266,11 @@ a {
   left: 0;
   right: 0;
   opacity: 0;
+  z-index: -1;
   background: linear-gradient(to top, #9356dc, #b35cdc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.cards-set_hearts--plain:hover {
-  -webkit-animation: heart 0.5s forwards;
-          animation: heart 0.5s forwards;
-  cursor: pointer;
-}
-.cards-set_hearts--plain:hover .cards-set_hearts--empty {
-  opacity: 0;
 }
 
 /*HEADER MENUS*/

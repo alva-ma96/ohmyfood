@@ -1,10 +1,18 @@
 .cards-set_hearts{
     position: relative;
-    
-    &--empty{
-        opacity: 1;
-    }
 
+    &--empty:hover{
+        background: linear-gradient(to top, #9356dc, #b35cdc, #ff79da);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;    
+
+        & + .cards-set_hearts--plain{
+            animation: heart .5s forwards;
+            cursor: pointer;
+        }
+    }
+    
     &--plain{
         position: absolute;
         top: 0;
@@ -12,17 +20,10 @@
         left: 0;
         right: 0;
         opacity: 0;
+        z-index: -1;
         background: linear-gradient(to top, #9356dc, #b35cdc, #ff79da);
         background-clip:text;
         -webkit-background-clip:text;
         -webkit-text-fill-color: transparent;
-    
-        &:hover{
-            animation: heart .5s forwards;
-            cursor: pointer;
-        }
-        &:hover .cards-set_hearts--empty{
-            opacity: 0;
-        }
     }
 }
