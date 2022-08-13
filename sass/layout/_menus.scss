@@ -79,6 +79,7 @@
                 border-radius: 10px;
                 box-shadow: $cards-shadow;
                 overflow: hidden;
+                cursor: pointer;
 
                 &_title{
                     white-space: nowrap;
