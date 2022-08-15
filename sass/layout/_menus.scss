@@ -121,15 +121,6 @@
 
 
 /***ICONE CHECK***/
-.menu_box_triple_meal:hover .animation{
-    display: flex;
-    animation: checked .5s ease-in-out both;
-}
-
-.menu_box_triple_meal:hover .animation-check{
-    animation: rotate .5s ease-in-out both;
-}
-
 .animation{
     background-color: $tertiary-color;
     border-radius: 0 10px 10px 0;
@@ -141,7 +132,16 @@
     }
 }
 
-/***ANIMATION CHECK***/
+.menu_box_triple_meal:hover .animation{
+    display: flex;
+    animation: checked .5s ease-in-out both;
+}
+
+.menu_box_triple_meal:hover .animation-check{
+    animation: rotate .5s ease-in-out both;
+}
+
+/***ANIMATION FADE***/
 .fade1{
     opacity: 0;
     animation: fadein 2s forwards;

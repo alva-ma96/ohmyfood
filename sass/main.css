@@ -188,7 +188,7 @@
     width: 0px;
   }
   to {
-    width: 100px;
+    width: 85px;
   }
 }
 @keyframes checked {
@@ -196,7 +196,7 @@
     width: 0px;
   }
   to {
-    width: 100px;
+    width: 85px;
   }
 }
 @-webkit-keyframes checked-rotate {
@@ -425,6 +425,16 @@ a {
 }
 
 /***ICONE CHECK***/
+.animation {
+  background-color: #99E2D0;
+  border-radius: 0 10px 10px 0;
+  display: none;
+}
+.animation-check {
+  color: white;
+  font-size: 25px;
+}
+
 .menu_box_triple_meal:hover .animation {
   display: flex;
   -webkit-animation: checked 0.5s ease-in-out both;
@@ -436,17 +446,7 @@ a {
           animation: rotate 0.5s ease-in-out both;
 }
 
-.animation {
-  background-color: #99E2D0;
-  border-radius: 0 10px 10px 0;
-  display: none;
-}
-.animation-check {
-  color: white;
-  font-size: 25px;
-}
-
-/***ANIMATION CHECK***/
+/***ANIMATION FADE***/
 .fade1 {
   opacity: 0;
   -webkit-animation: fadein 2s forwards;
@@ -626,7 +626,9 @@ nav h3 {
 }
 .li-nav_card:hover .hover--color {
   color: #9356DC;
-  transition: 1s;
+  transform: scale(1.3);
+  transition: 0.2s;
+  transition-delay: 0.6s;
 }
 .li-nav_card i {
   margin: 0 30px;
