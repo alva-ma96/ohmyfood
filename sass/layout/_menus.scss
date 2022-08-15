@@ -81,10 +81,21 @@
                 overflow: hidden;
                 cursor: pointer;
 
+                &:hover .animation{
+                    display: flex;
+                    min-width: 100px;
+                    flex-basis: 100px;                  
+                    animation: checked .5s ease-in-out both;                
+                }
+                &:hover .animation-check{
+                    animation: rotate .5s ease-in-out both;
+                }
+
                 &_title{
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
+                    flex-grow: 1;
                 }
         
                 & h5{
@@ -97,6 +108,9 @@
         
                 &_price{
                     margin-bottom: 12px;
+                    min-width: 100px;
+                    justify-content: right;
+                    flex-basis: 250px;
                 }
             }
         }
@@ -124,21 +138,15 @@
 .animation{
     background-color: $tertiary-color;
     border-radius: 0 10px 10px 0;
-    display: none;
+    flex-basis: 0;
+    min-width: 0px;
+    width: 0;
+    transition: all 400ms;
 
     &-check{
         color: white;
         font-size: 25px;
     }
-}
-
-.menu_box_triple_meal:hover .animation{
-    display: flex;
-    animation: checked .5s ease-in-out both;
-}
-
-.menu_box_triple_meal:hover .animation-check{
-    animation: rotate .5s ease-in-out both;
 }
 
 /***ANIMATION FADE***/

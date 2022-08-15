@@ -228,6 +228,8 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   position: relative;
+}
+body.hidden {
   overflow: hidden;
   -webkit-animation: overflow 0s 3s forwards;
           animation: overflow 0s 3s forwards;
@@ -391,10 +393,22 @@ a {
   overflow: hidden;
   cursor: pointer;
 }
+.menu_box_triple_meal:hover .animation {
+  display: flex;
+  min-width: 100px;
+  flex-basis: 100px;
+  -webkit-animation: checked 0.5s ease-in-out both;
+          animation: checked 0.5s ease-in-out both;
+}
+.menu_box_triple_meal:hover .animation-check {
+  -webkit-animation: rotate 0.5s ease-in-out both;
+          animation: rotate 0.5s ease-in-out both;
+}
 .menu_box_triple_meal_title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  flex-grow: 1;
 }
 .menu_box_triple_meal h5 {
   font-size: 1.05rem;
@@ -405,6 +419,9 @@ a {
 }
 .menu_box_triple_meal_price {
   margin-bottom: 12px;
+  min-width: 100px;
+  justify-content: right;
+  flex-basis: 250px;
 }
 
 .light-sub {
@@ -427,22 +444,14 @@ a {
 .animation {
   background-color: #99E2D0;
   border-radius: 0 10px 10px 0;
-  display: none;
+  flex-basis: 0;
+  min-width: 0px;
+  width: 0;
+  transition: all 400ms;
 }
 .animation-check {
   color: white;
   font-size: 25px;
-}
-
-.menu_box_triple_meal:hover .animation {
-  display: flex;
-  -webkit-animation: checked 0.5s ease-in-out both;
-          animation: checked 0.5s ease-in-out both;
-}
-
-.menu_box_triple_meal:hover .animation-check {
-  -webkit-animation: rotate 0.5s ease-in-out both;
-          animation: rotate 0.5s ease-in-out both;
 }
 
 /***ANIMATION FADE***/

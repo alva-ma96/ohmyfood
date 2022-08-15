@@ -14,8 +14,11 @@ html{
 body{
     font-family: 'Roboto', sans-serif;
     position: relative;
-    overflow: hidden;
-    animation: overflow 0s 3s forwards;
+
+    &.hidden{
+        overflow: hidden;
+        animation: overflow 0s 3s forwards;    
+    }
 }
 
 h1{
