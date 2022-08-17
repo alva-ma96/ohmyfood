@@ -82,7 +82,7 @@
   font-weight: 800;
 }
 
-@-webkit-keyframes disappear {
+@-webkit-keyframes loader {
   from {
     transform: translateX(0);
   }
@@ -91,7 +91,7 @@
   }
 }
 
-@keyframes disappear {
+@keyframes loader {
   from {
     transform: translateX(0);
   }
@@ -125,22 +125,6 @@
     transform: rotate(360deg);
   }
 }
-@-webkit-keyframes heart {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes heart {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @-webkit-keyframes text-fade {
   0%, 100% {
     color: rgb(0, 0, 0);
@@ -161,6 +145,22 @@
   }
   50% {
     color: rgb(0, 0, 0);
+  }
+}
+@-webkit-keyframes heart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes heart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 @-webkit-keyframes fadein {
@@ -187,16 +187,10 @@
   from {
     width: 0px;
   }
-  to {
-    width: 85px;
-  }
 }
 @keyframes checked {
   from {
     width: 0px;
-  }
-  to {
-    width: 85px;
   }
 }
 @-webkit-keyframes checked-rotate {
@@ -285,17 +279,6 @@ a {
 
 .cards-set_hearts {
   position: relative;
-}
-.cards-set_hearts--empty:hover {
-  background: linear-gradient(to top, #9356dc, #b35cdc, #ff79da);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  cursor: pointer;
-}
-.cards-set_hearts--empty:hover + .cards-set_hearts--plain {
-  -webkit-animation: heart 0.5s forwards;
-          animation: heart 0.5s forwards;
 }
 .cards-set_hearts--plain {
   position: absolute;
@@ -395,14 +378,14 @@ a {
 }
 .menu_box_triple_meal:hover .animation {
   display: flex;
-  min-width: 100px;
-  flex-basis: 100px;
-  -webkit-animation: checked 0.5s ease-in-out both;
-          animation: checked 0.5s ease-in-out both;
+  min-width: 90px;
+  flex-basis: 90px;
+  -webkit-animation: checked 0.5s ease-in-out;
+          animation: checked 0.5s ease-in-out;
 }
 .menu_box_triple_meal:hover .animation-check {
-  -webkit-animation: rotate 0.5s ease-in-out both;
-          animation: rotate 0.5s ease-in-out both;
+  -webkit-animation: rotate 0.5s ease-in-out;
+          animation: rotate 0.5s ease-in-out;
 }
 .menu_box_triple_meal_title {
   white-space: nowrap;
@@ -419,9 +402,8 @@ a {
 }
 .menu_box_triple_meal_price {
   margin-bottom: 12px;
-  min-width: 100px;
+  min-width: 60px;
   justify-content: right;
-  flex-basis: 250px;
 }
 
 .light-sub {
@@ -601,7 +583,7 @@ nav h3 {
 @media screen and (min-width: 992px) {
   .ul-nav {
     flex-direction: row;
-    max-width: 85%;
+    max-width: 90%;
     margin: 0 auto;
   }
 }
@@ -732,8 +714,8 @@ nav h3 {
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.902);
   z-index: 999;
-  -webkit-animation: disappear 0s 3s both;
-          animation: disappear 0s 3s both;
+  -webkit-animation: loader 0s 3s both;
+          animation: loader 0s 3s both;
 }
 
 /*SPINNER LOADER*/

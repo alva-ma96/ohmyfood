@@ -83,12 +83,12 @@
 
                 &:hover .animation{
                     display: flex;
-                    min-width: 100px;
-                    flex-basis: 100px;                  
-                    animation: checked .5s ease-in-out both;                
+                    min-width: 90px;
+                    flex-basis: 90px;                  
+                    animation: checked .5s ease-in-out;                
                 }
                 &:hover .animation-check{
-                    animation: rotate .5s ease-in-out both;
+                    animation: rotate .5s ease-in-out;
                 }
 
                 &_title{
@@ -108,9 +108,8 @@
         
                 &_price{
                     margin-bottom: 12px;
-                    min-width: 100px;
+                    min-width: 60px;
                     justify-content: right;
-                    flex-basis: 250px;
                 }
             }
         }

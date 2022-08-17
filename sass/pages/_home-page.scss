@@ -94,7 +94,7 @@ nav h3{
 .ul-nav{
     @media screen and (min-width: 992px) {
         flex-direction: row;
-        max-width: 85%;
+        max-width: 90%;
         margin: 0 auto;
     }
 }
@@ -236,7 +236,7 @@ nav h3{
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.902);
     z-index: 999;
-    animation: disappear 0s 3s both;
+    animation: loader 0s 3s both;
 }
 
 /*SPINNER LOADER*/

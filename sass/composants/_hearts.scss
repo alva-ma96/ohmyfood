@@ -1,20 +1,6 @@
 .cards-set_hearts{
     position: relative;
 
-    &--empty:hover{
-        background: linear-gradient(to top, #9356dc, #b35cdc, #ff79da);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        cursor: pointer;
-
-        & + .cards-set_hearts--plain{
-            animation: heart .5s forwards;
-        }
-    
-    }
-
-    
     &--plain{
         position: absolute;
         top: 0;
